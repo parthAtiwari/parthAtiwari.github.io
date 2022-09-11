@@ -348,16 +348,16 @@ p{
 }
 .flip-card-back a{
     
-    display: inline-block;
+ 
     border-radius:70px;
     font-size:15px;
     border:1px solid #fff724;
     padding: 10px 30px;
     text-decoration: none;
+    text-align:center;
     color:white;
-
-
 }
+
 #website{
     font-size:30px;
     color:rgb(240, 236, 204);
