@@ -356,10 +356,7 @@ p{
 
 
 
-.cards ul li:hover{
-    /* box-shadow: 0px 1px 2px 1px rgba(141, 250, 175, 0.7),1px 2px 4px 3px rgba(141, 250, 175, 0.7),2px 4px 8px 4px rgba(141, 250, 175, 0.7); */
-    transform: rotateY(180deg);
-}
+
 .cardcontent p{
     text-align: center;
     font-size: 30px;
