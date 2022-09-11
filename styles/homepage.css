@@ -339,12 +339,12 @@ p{
 
     transform: rotateY(180deg);
 }
+
 .flip-card-back img{
-    width:35%;
-    height:25%;
+    width:25%;
+    height:15%;
     margin-left:auto;
     margin-top: 50%;
-    
 }
 #website{
     font-size:30px;
