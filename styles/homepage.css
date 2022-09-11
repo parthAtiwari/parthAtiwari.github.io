@@ -339,6 +339,13 @@ p{
 
     transform: rotateY(180deg);
 }
+.flip-card-back img{
+    width:35%;
+    height:25%;
+    margin-left:auto;
+    margin-top: 50%;
+    
+}
 #website{
     font-size:30px;
     color:rgb(240, 236, 204);
