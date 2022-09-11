@@ -343,7 +343,7 @@ p{
 .flip-card-back img{
     width:35%;
     height:25%;
-    margin-left:auto;
+    margin-left:30%;
     margin-top: 30%;
 }
 .flip-card-back a{
@@ -356,8 +356,12 @@ p{
     text-decoration: none;
     text-align:center;
     color:white;
+    
 }
 
+.flip-card-back a:hover{
+    background-image: linear-gradient(to right,rgb(238, 158, 133),rgb(247, 166, 166),rgb(255, 205, 130));
+}
 #website{
     font-size:30px;
     color:rgb(240, 236, 204);
