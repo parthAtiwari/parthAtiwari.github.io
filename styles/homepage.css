@@ -36,7 +36,7 @@
 
 
 .backwall{
-    background-image: url("media/backimage.jpg"); 
+    background-image: url("/media/backimage.jpg"); 
     height: 700px;
     margin-top: 0px;
     
@@ -326,10 +326,11 @@ p{
 .cardcontent p{
     text-align: center;
     font-size: 30px;
-    font-family: "Cormorant SC",serif;
+    font-family: 'Poiret One', cursive;
+    
     color:whitesmoke;
     background-image: linear-gradient(to right,#ffb983,#cba29c,#c08b93);
-    font-weight: 200;
+    font-weight: 100;
     
 }
 
