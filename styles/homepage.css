@@ -348,10 +348,10 @@ p{
 }
 .flip-card-back a{
     
- 
+    margin-top:40%;
     border-radius:70px;
     font-size:15px;
-    border:1px solid #fff724;
+    border:1px solid #ffb624;
     padding: 10px 30px;
     text-decoration: none;
     text-align:center;
