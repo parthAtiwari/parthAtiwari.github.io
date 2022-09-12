@@ -28,7 +28,7 @@
 
 .backwall{
     
-    height: 700px;
+    
     width:100%;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
@@ -413,7 +413,7 @@ p{
 }
 
 .ownerswall{
-    height: 700px;
+
     
     width:100%;
     
