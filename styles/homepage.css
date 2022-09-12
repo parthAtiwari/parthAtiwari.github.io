@@ -271,6 +271,23 @@ p{
     box-shadow: 0px 1px 2px 2px #fffff2,1px 2px 4px 4px #fffff2,2px 4px 8px 8px #fffff2,4px 8px 16px 16px #fffff2;
     width:100%;
 }
+.frames{
+    
+    background-color: rgba(128, 167, 199, 0.659);
+}
+.frames .cards ul li{
+    width: 400px;
+    height:300px;
+    background-color:  rgba(216, 230, 222, 0.4);
+    
+  
+    
+}
+.frames .cards ul li img{
+    width:95%;
+    height:95%;
+    padding: 2%;
+}
 .cards{
 
     
