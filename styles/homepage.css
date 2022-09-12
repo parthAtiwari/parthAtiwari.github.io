@@ -276,8 +276,9 @@ p{
     background-color: rgba(128, 167, 199, 0.659);
 }
 .frames .cards ul li{
-    width: 400px;
+    width: 350px;
     height:300px;
+    margin-left:0px;
     background-color:  rgba(216, 230, 222, 0.4);
     
   
