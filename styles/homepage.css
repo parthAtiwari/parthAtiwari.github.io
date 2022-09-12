@@ -5,11 +5,11 @@
 .body{
     width:100%;
 }
-@media all and (max-width: 750px) {
+/* @media all and (max-width: 750px) {
     body{
         margin: auto;
         padding: auto;
- }
+ } */
     
 .header h1{
 
@@ -268,7 +268,7 @@ p{
     background-color: rgba(128, 167, 199, 0.659);
 }
 .frames .cards ul li{
-    width: 80%;
+    width: 90%;
     height:300px;
     margin-left:0px;
     background-color:  rgba(216, 230, 222, 0.4);
