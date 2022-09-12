@@ -6,11 +6,11 @@
 .body{
     width:100%;
 }
-/* @media all and (max-width: 750px) {
+@media all and (max-width: 750px) {
     body{
         margin: auto;
         padding: auto;
- } */
+ }
     
 .header h1{
 
