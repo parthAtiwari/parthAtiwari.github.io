@@ -1,17 +1,16 @@
 .header {
     background-color:rgb(142, 121, 179);
-    
+    width:100%
 }
 .body{
     width:100%;
 }
-/* @media all and (max-width: 750px) {
+@media all and (max-width: 750px) {
     body{
         margin: auto;
         padding: auto;
-    } 
+ }
     
-} */
 .header h1{
 
     font-family: 'Cormorant SC', serif;
@@ -23,14 +22,7 @@
     size: auto;
   
     color: rgb(255, 255, 255);
-    
-    
-  
-    
-    
-    
-    
-   
+       
 
 }
 
