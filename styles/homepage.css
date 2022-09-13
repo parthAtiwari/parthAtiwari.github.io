@@ -34,6 +34,7 @@
     
    
     width:100%;
+    height:50vh;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
     
@@ -425,7 +426,7 @@ p{
 
     
     width:100%;
-    
+    height:50vh;
 
     background-image:url("/media/pencils.jpg");
     background-repeat: no-repeat;
