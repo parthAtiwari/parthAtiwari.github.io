@@ -263,6 +263,9 @@ p{
     font-size: 30px;
     font-weight: bolder;
     font-family: "Cormorant SC",serif;
+    background: -webkit-linear-gradient(#eee 60%, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 
 }
