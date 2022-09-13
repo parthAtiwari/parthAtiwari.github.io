@@ -32,7 +32,7 @@
 
 .backwall{
     
-    height:600px;
+    height:100%vh;
     width:100%;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
@@ -423,7 +423,8 @@ p{
 .ownerswall{
 
     
-    width:100%;
+    width:100%vh;
+    height:100%vh;
     
 
     background-image:url("/media/pencils.jpg");
