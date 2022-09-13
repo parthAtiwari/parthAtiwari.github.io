@@ -104,6 +104,7 @@ nav ul li a:hover{
   
     letter-spacing: 1px;
     line-height: 30px;
+    overflow:hidden;
     
   
     
@@ -423,7 +424,7 @@ p{
 .ownerswall{
 
     
-    width:100%vh;
+    width:100vh;
     height:100%vh;
     
 
