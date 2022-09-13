@@ -117,18 +117,18 @@ nav ul li a:hover{
 
 }
 .text-box h1{
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 50px;
+    line-height: 50px;
     color: white;
     font-family: 'Quicksand', sans-serif;
     
 }
 .text-box span{
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 60px;
+    line-height: 60px;
     color:rgba(84, 77, 159, 0.779);
     font-family: 'Quicksand', sans-serif;
-  
+    padding-bottom:10vh;
                 
 
 }
