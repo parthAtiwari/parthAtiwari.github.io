@@ -27,7 +27,7 @@ body{
 
     position: sticky;
     
-    z-index: 1000;
+    z-index: 2000;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -73,7 +73,7 @@ body{
   
    
 }
-nav{
+/* nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -116,9 +116,8 @@ nav ul li a:hover{
     font-size: 15px;
     color:#24d7ff;
     
-    
-
-}
+   
+} */
 
 .text-box{
     font-size: 20px;
