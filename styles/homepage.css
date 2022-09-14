@@ -30,13 +30,13 @@
 
 .backwall{
     
-    height: 50vh;
+    height: 60vh;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
     
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+  
     
    
 
@@ -444,7 +444,7 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    
     
     
     
