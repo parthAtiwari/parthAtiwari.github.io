@@ -1,27 +1,36 @@
 .header {
-    background-color:rgba(84, 77, 159, 0.779);
-    width:100vw;
+    background:transparent;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    backface-visibility: hidden;
-    
+    height:15vh;
+    background-color: whitesmoke;
+ 
+
+}
+html{
+    width: 100%;
+}
+body{
+    width:100%;
+
 }
 
-
-    
 .header h1{
 
     font-family: 'Cormorant SC', serif;
-    font-size: 40px;
+    font-size: 50px;
     text-align: left;
     font-weight: 500;
-    padding: 5px;
+    padding: 1px;
     margin-top: 0px;
-    size: auto;
-   
-    color:white;
+
+    position: sticky;
+    
     z-index: 1000;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
    
 
@@ -34,7 +43,7 @@
     width:100vw;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
-    
+    margin-top:0;
     background-size:cover;
     background-repeat: no-repeat;
   
@@ -113,12 +122,12 @@ nav ul li a:hover{
 
 .text-box{
     font-size: 20px;
-    margin-top: 0vh;
+
     margin-left:5%;
   
     letter-spacing: 1px;
     line-height: 30px;
-    
+    padding: 2vh 2vw;
   
     
 
@@ -173,7 +182,7 @@ nav ul li a:hover{
     font-weight: 500;
 }
 .backwall .sometext a:hover{
-    background-color: black ;
+    background-color:rgba(216, 230, 222, 0.4);
     
 
     
