@@ -132,16 +132,16 @@ nav ul li a:hover{
 
 }
 .text-box h1{
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 8vh;
+    line-height: 8vh;
     color: white;
     font-family: 'Quicksand', sans-serif;
    
     
 }
 .text-box span{
-    font-size: 7vw;
-    line-height: 7vw;
+    font-size: 7vh;
+    line-height: 7vh;
     color:rgba(84, 77, 159, 0.779);
     font-family: 'Quicksand', sans-serif;
     padding-bottom:7vh;
@@ -174,7 +174,7 @@ nav ul li a:hover{
 }
 .backwall .sometext .btn{
     
-    
+    margin-top:7vh;
     margin-left: 2%;
     font-weight: 500;
 }
@@ -187,7 +187,7 @@ nav ul li a:hover{
 .backwall .sometext p{
     margin-left: 1vw;
     text-align: left;
-    font-size: 4vw;
+    font-size: 3vh;
     color: white;
 }
 .para p{
