@@ -132,16 +132,16 @@ nav ul li a:hover{
 
 }
 .text-box h1{
-    font-size: 20vw;
-    line-height: 20vw;
+    font-size: 4vw;
+    line-height: 4vw;
     color: white;
     font-family: 'Quicksand', sans-serif;
    
     
 }
 .text-box span{
-    font-size: 17vw;
-    line-height: 17vw;
+    font-size: 5vw;
+    line-height: 5vw;
     color:rgba(84, 77, 159, 0.779);
     font-family: 'Quicksand', sans-serif;
     padding-bottom:7vh;
@@ -185,9 +185,9 @@ nav ul li a:hover{
     
 }
 .backwall .sometext p{
-    margin-left: 80px;
+    margin-left: 1vw;
     text-align: left;
-    font-size: 7vw;
+    font-size: 2vw;
     color: white;
 }
 .para p{
