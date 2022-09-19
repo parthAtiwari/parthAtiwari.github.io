@@ -2,7 +2,7 @@
     background:transparent;
     position: -webkit-sticky;
     position: sticky;
-    margin-top:0;
+    top:0;
     height:10vh;
     background-color: whitesmoke;
  
@@ -19,7 +19,7 @@ body{
 .header h1{
 
     font-family: 'Cormorant SC', serif;
-    font-size: 4vh;
+    font-size: 5vh;
     text-align: left;
     font-weight: 500;
     padding: 0.5vh;
