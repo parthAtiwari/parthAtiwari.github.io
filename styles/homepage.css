@@ -132,25 +132,23 @@ nav ul li a:hover{
 
 }
 .text-box h1{
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 70px;
+    line-height: 70px;
     color: white;
     font-family: 'Quicksand', sans-serif;
    
     
 }
 .text-box span{
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 60px;
+    line-height: 60px;
     color:rgba(84, 77, 159, 0.779);
     font-family: 'Quicksand', sans-serif;
-    padding-bottom:10vh;
+    padding-bottom:7vh;
                 
 
 }
-.sometext{
-    margin-top: 100px;
-}
+
 .backwall .sometext a{
     
     display: inline-block;
@@ -456,11 +454,12 @@ p{
 
     
     width:100%;
-    height:60vh;
+    height:70vh;
 
     background-image:url("/media/pencils.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment:fixed;
     background-size: cover;
     
     
