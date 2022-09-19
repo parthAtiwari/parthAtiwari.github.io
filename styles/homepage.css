@@ -19,11 +19,11 @@ body{
 .header h1{
 
     font-family: 'Cormorant SC', serif;
-    font-size: 50px;
+    font-size: 7vw;
     text-align: left;
     font-weight: 500;
     padding: 5px;
-    margin-top: 0px;
+  
 
     position: sticky;
     
@@ -52,9 +52,7 @@ body{
 
 }
 .backwall .sometext p{
-    background: -webkit-linear-gradient(#eee, #333 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#fff;
 }
 
 h2{
