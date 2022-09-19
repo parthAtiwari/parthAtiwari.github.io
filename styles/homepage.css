@@ -3,7 +3,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height:15vh;
+    height:10vh;
     background-color: whitesmoke;
  
 
@@ -22,7 +22,7 @@ body{
     font-size: 50px;
     text-align: left;
     font-weight: 500;
-    padding: 1px;
+    padding: 5px;
     margin-top: 0px;
 
     position: sticky;
@@ -39,7 +39,7 @@ body{
 
 .backwall{
     
-    height: 100vh;
+    height: 80vh;
     width:100vw;
     background-image: url("/media/bluebook.jpg"); 
     background-position: center;
