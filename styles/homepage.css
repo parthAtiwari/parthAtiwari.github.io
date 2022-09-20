@@ -423,7 +423,11 @@ p{
     font-family: "Cormorant SC",serif;
     text-align: center;
 }
+.cardcontent img{
+    width: 40%;
+    height: 40%;
 
+}
 
 
 
