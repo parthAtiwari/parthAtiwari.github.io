@@ -455,7 +455,7 @@ p{
 .ownerswall{
     
     
-    background-image: url("/media/board.jpg");
+    background-image: url("/media/lightframe.jpg");
  
     margin-top: 0;
     background-position: center;
@@ -469,16 +469,16 @@ p{
     
 }
 .ownerswall h4{
-    margin-left: 51%;
+    text-align: center;
+    margin-top: 5.5%;
     font-family: 'Cormorant SC',serif;
     font-size: 4vh;
-    font-weight: 100;
-    margin-top: 25vh;
+    font-weight: 400;
+    
    
     
 }
 .ownerswall p{
-    margin-left:48%;
-    margin-right: 37%;
+    margin-left:43%;
+    margin-right: 45%;
 }
-
