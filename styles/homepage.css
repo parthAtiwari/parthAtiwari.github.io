@@ -2,17 +2,16 @@
     background:transparent;
     position: -webkit-sticky;
     position: sticky;
-    top:0;
+    margin-top:0;
     height:10vh;
     background-color: whitesmoke;
  
 
 }
-html{
-    width: 100%;
-}
+
 body{
     width:100%;
+    margin:0;
 
 }
 
