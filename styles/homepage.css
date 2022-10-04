@@ -16,12 +16,13 @@ body{
 }
 
 .header h1{
-
+    
     font-family: 'Cormorant SC', serif;
     font-size: 5vh;
     text-align: left;
     font-weight: 500;
     padding-top: 1.25vh;
+    padding-left:1.25vh;
   
     
     position: sticky;
