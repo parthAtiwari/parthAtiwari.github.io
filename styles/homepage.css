@@ -2,6 +2,7 @@
     background:transparent;
     position: -webkit-sticky;
     position: sticky;
+    top:0
     height:10vh;
     background-color: whitesmoke;
  
@@ -20,10 +21,10 @@ body{
     font-size: 5vh;
     text-align: left;
     font-weight: 500;
-    padding-top: 1.25vh;
+    padding: 2px;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 2000;
+    z-index: 1000;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
