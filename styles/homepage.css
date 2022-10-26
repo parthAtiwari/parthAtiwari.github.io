@@ -36,7 +36,7 @@ body{
     
     height: 80vh;
     width:100vw;
-    background-image: url("/media/pencils.jpg"); 
+    background-image: url("/media/bluelights.jpg"); 
     background-position: center;
     margin-top:0;
     background-size:cover;
@@ -135,7 +135,7 @@ nav ul li a:hover{
 .text-box span{
     font-size: 7vh;
     line-height: 7vh;
-    color:rgba(84, 77, 159, 0.779);
+    color:#fff;
     font-family: 'Quicksand', sans-serif;
     padding-bottom:7vh;
                 
