@@ -327,7 +327,7 @@ p{
     
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgba(19, 69, 104, 0.5);
+    background-color: rgb(155,155,155);
     
 
 }
@@ -341,7 +341,7 @@ p{
 
 
 .cards ul li{
-    background-color: transparent;
+    background-color: rgba(131, 137, 168, 0.81);
     width: 300px;
     height: 400px;
     margin-left:1%;
@@ -386,7 +386,7 @@ p{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgba(19, 69, 104, 0.5);
+    background-color: rgba(94, 97, 125, 0.81);
 
     transform: rotateY(180deg);
 }
