@@ -127,7 +127,7 @@ nav ul li a:hover{
 .text-box h1{
     font-size: 8vh;
     line-height: 8vh;
-    color: white;
+    color:rgb(255, 199, 153);
     font-family: 'Quicksand', sans-serif;
    
     
@@ -135,7 +135,7 @@ nav ul li a:hover{
 .text-box span{
     font-size: 7vh;
     line-height: 7vh;
-    color:#fff724;
+    color:#fff;
     font-family: 'Quicksand', sans-serif;
     padding-bottom:7vh;
                 
@@ -269,7 +269,7 @@ p{
 
 
 .walltitle {
-    margin-top: 50px;
+    
     text-align: center;
     width:100%;
     background-color: rgb(155, 155, 155);
