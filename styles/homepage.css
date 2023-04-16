@@ -6,16 +6,22 @@
   height: 10vh;
   background-color: whitesmoke;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
   width: 100vw;
   background-color: white;
   margin: 0;
+ 
+ 
+
 }
 
 .header h1 {
   font-family: "Cormorant SC", serif;
-  font-size: 5vh;
+  font-size: 2rem;
   text-align: left;
   font-weight: 500;
   padding: 1px;
@@ -160,10 +166,12 @@ nav ul li a:hover{
   font-weight: 10;
 }
 #pagend {
-  background-color: whitesmoke;
+  background-color: rgb(6, 29, 55);
   font-size: 15px;
   text-align: center;
   text-align: right;
+  color: white;
+  padding: 1%;
 }
 #pagend img {
   width: 10px;
@@ -178,9 +186,7 @@ nav ul li a:hover{
   margin-left: 2px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 #pagend p {
   text-align: center;
   font-size: 2rem;
@@ -406,4 +412,40 @@ p {
 .ownerswall p {
   margin-left: 43%;
   margin-right: 45%;
+}
+
+.skills-cards{
+  width: 70vw;
+  margin: 0 15%;
+  text-align: center;
+  align-items: center;
+  
+
+  
+  
+
+}
+
+
+.skills-cards ul li{
+  box-shadow: 0px 1px 3px 0 grey;
+  width: 38%;
+  margin: 5% 31%;
+  height: 20vh;
+  list-style: none;
+  padding: 1%;
+  
+
+}
+.skills-cards h3, ul li h4{
+  margin: 5vh 0;
+  font-family: 'Cormorant SC',serif;
+  font-size: 2rem;
+  font-weight: 300;
+  
+}
+
+.skills-cards ul li:hover{
+  box-shadow: 0px 2px 3px 0px grey;
+
 }
