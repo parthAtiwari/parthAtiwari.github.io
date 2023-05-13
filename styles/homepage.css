@@ -114,14 +114,14 @@ nav ul li a:hover{
   padding: 2vh 2vw;
 }
 .text-box h1 {
-  font-size: 12vh;
-  line-height: 12vh;
+  font-size: 15vh;
+  line-height: 15vh;
   color: rgb(255, 199, 153);
   font-family: "Quicksand", sans-serif;
 }
 .text-box span {
-  font-size: 10vh;
-  line-height: 10vh;
+  font-size: 15vw;
+  line-height: 15vw;
   color: #fff;
   font-family: "Quicksand", sans-serif;
   padding-bottom: 7vh;
