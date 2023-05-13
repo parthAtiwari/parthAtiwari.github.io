@@ -483,6 +483,7 @@ p {
 }
 .developer-card ul li{
   background-color: white;
+  min-width:300px;
   width: 50%;
   margin: 2% 25%;
   padding: 3%;
