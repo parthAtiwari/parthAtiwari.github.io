@@ -481,43 +481,40 @@ p {
   background-color: rgb(232, 232, 232);
   
 }
-.developer-card ul li{
+.developer-card {
   background-color: white;
-  min-width:300px;
-  width: 50%;
-  margin: 2% 2%;
+  width: 300px;
+  height: 250px;
+  margin-left: 2%;
   padding: 3%;
   box-shadow: 0px 1px 2px 0px grey, 1px 1px 2px 0px grey;
   list-style: none;
 }
-.developer-card ul li:hover{
+.developer-card:hover{
   box-shadow: 1px 2px 2px 0px grey, 1px 2px 3px 1px grey;
 }
-.developer-card ul{
-  display: flex;
-  flex:1;
-  flex-wrap: wrap;
+
   
 }
 
-.developer-card ul li img{
+.developer-card img{
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  margin:5% 27%;
+  
   
 }
-.developer-card ul li img:hover{
+.developer-card img:hover{
   transform: scale(1.2);
 
 }
 
-.developer-card  ul li p{
+.developer-card  p{
   font-family: 'Playfair Display',serif;
   font-size: 2rem;
 
 }
-.developer-card ul li h3{
+.developer-card h3{
   font-family: "Raleway",serif;
   font-size: 3rem;
   color: #000;
