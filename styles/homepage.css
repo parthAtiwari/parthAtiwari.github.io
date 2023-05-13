@@ -11,7 +11,7 @@ html {
   }
 
 body {
-  width: 100vw;
+  width:100vw;
   background-color: white;
   margin: 0;
  
@@ -259,14 +259,10 @@ p {
 .wall {
   box-shadow: 0px 1px 2px 2px #fffff2, 1px 2px 4px 4px #fffff2,
     2px 4px 8px 8px #fffff2, 4px 8px 16px 16px #fffff2;
-  width: 100%;
+  width: 100vw;
 }
-.frames {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* background-color: rgba(128, 167, 199, 0.659); */
+.frames{
+  width: 100vw;
 }
 .frames .cards ul li {
   width: 300px;
@@ -284,24 +280,31 @@ p {
   display: flex;
   flex-wrap: nowrap;
   background-color: rgb(155, 155, 155);
+  margin:0;
+
 }
-.cards ul {
+.cards ul{
+
   flex: 1;
+
 }
 
-.cards ul li {
-  background-color: rgb(100, 107, 144);
+
+
+
+.cards ul li{
+  background-color: rgb(100, 107, 144) ;
   width: 300px;
   height: 400px;
-  margin-left: 2%;
-  margin-top: 50px;
+  margin-left:2%;
+  margin-top: 50px; 
   display: inline-block;
-  margin-right: 1%;
+  margin-right:1%;
 
-  perspective: 1000px;
-  box-shadow: 0px 1px 2px 0 #fffff2, 1px 2px 4px 0 #fffff2,
-    2px 4px 8px 0 #fffff2, 4px 8px 16px 0 #fffff2;
+  perspective: 1000px; 
+  box-shadow: 0px 1px 2px 0 #fffff2,1px 2px 4px 0 #fffff2,2px 4px 8px 0 #fffff2,4px 8px 16px 0 #fffff2;
   list-style: none;
+
 }
 
 /* This container is needed to position the front and back side */
@@ -416,8 +419,8 @@ p {
 }
 
 .skills-cards{
-  width: 70vw;
-  margin: 0 15%;
+  width: 90vw;
+  margin: 0 5%;
   text-align: center;
   align-items: center;
   
@@ -427,12 +430,16 @@ p {
 
 }
 
-
+.skills-cards ul{
+  display: flex;
+  flex:1;
+  flex-wrap: wrap;
+}
 .skills-cards ul li{
   box-shadow: 0px 1px 3px 0 grey;
-  width: 38%;
-  margin: 5% 31%;
-  height: 20vh;
+  width: 200px;
+  margin: 5% 5%;
+  height: 200px;
   list-style: none;
   padding: 1%;
   
