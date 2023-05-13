@@ -35,13 +35,14 @@ body {
 }
 
 .backwall {
-  height: 80vh;
+ 
   width: 100vw;
-  background-image: url("/media/poster.jpg");
+  background-image: url("/media/backwall.jpg");
   background-position: center;
   margin-top: 0;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 10%;
 }
 .backwall .sometext p {
   color: #fff;
@@ -113,14 +114,14 @@ nav ul li a:hover{
   padding: 2vh 2vw;
 }
 .text-box h1 {
-  font-size: 8vh;
-  line-height: 8vh;
+  font-size: 17vh;
+  line-height: 17vh;
   color: rgb(255, 199, 153);
   font-family: "Quicksand", sans-serif;
 }
 .text-box span {
-  font-size: 7vh;
-  line-height: 7vh;
+  font-size: 12vh;
+  line-height: 12vh;
   color: #fff;
   font-family: "Quicksand", sans-serif;
   padding-bottom: 7vh;
@@ -129,7 +130,7 @@ nav ul li a:hover{
 .backwall .sometext a {
   display: inline-block;
 
-  font-size: 20px;
+  font-size: 3vh;
   color: #fff;
   border: 1px solid white;
 
@@ -147,18 +148,21 @@ nav ul li a:hover{
   margin-top: 2vh;
   text-decoration: none;
 }
+.backwall .sometext{
+  margin-left: 5%;
+}
 .backwall .sometext .btn {
   margin-top: 5vh;
-  margin-left: 2%;
+  margin: 2% 2%;
   font-weight: 500;
 }
 .backwall .sometext a:hover {
   background-color: rgba(216, 230, 222, 0.4);
 }
 .backwall .sometext p {
-  margin-left: 1vw;
+  
   text-align: left;
-  font-size: 3vh;
+  font-size: 5vh;
   color: white;
 }
 .para p {
@@ -235,8 +239,8 @@ p {
     color: #dd4b39; */
 
 .fa:hover {
-  color: #695aa6;
-  box-shadow: 2px 2px 1px #695aa6;
+  color: rgb(0,242,255);
+  box-shadow: 2px 2px 1px rgb(0,242,255);
 }
 
 .walltitle {
@@ -367,10 +371,13 @@ p {
 }
 #website {
   font-size: 30px;
-  color: rgb(240, 236, 204);
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+
   font-family: "Cormorant SC", serif;
   text-align: center;
+  font-size: 2rem;
+
 }
 .cardcontent img {
   width: 40%;
@@ -456,4 +463,73 @@ p {
 .skills-cards ul li:hover{
   box-shadow: 0px 2px 3px 0px grey;
 
+}
+#subject{
+  animation: color-change 1s infinite;
+  
+}
+@keyframes color-change {
+  
+  50% { color: rgb(0, 242, 255); }
+  100% { color: rgb(0, 0, 0); }
+  
+  
+}
+.developer-container {
+  width: 90%;
+  margin: 5% 5%;
+  background-color: rgb(232, 232, 232);
+  
+}
+.developer-card ul li{
+  background-color: white;
+  width: 50%;
+  margin: 2% 25%;
+  padding: 3%;
+  box-shadow: 0px 1px 2px 0px grey, 1px 1px 2px 0px grey;
+  list-style: none;
+}
+.developer-card ul li:hover{
+  box-shadow: 1px 2px 2px 0px grey, 1px 2px 3px 1px grey;
+}
+.developer-card ul{
+  display: flex;
+  flex:1;
+  flex-wrap: wrap;
+  
+}
+
+.developer-card ul li img{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin:5% 27%;
+  
+}
+.developer-card ul li img:hover{
+  transform: scale(1.2);
+
+}
+
+.developer-card  ul li p{
+  font-family: 'Playfair Display',serif;
+  font-size: 2rem;
+
+}
+.developer-card ul li h3{
+  font-family: "Raleway",serif;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  
+
+}
+.developer-container h2{
+  font-family: "Raleway",serif;
+  font-size: 5rem;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  animation: color-change 1s infinite;
 }
