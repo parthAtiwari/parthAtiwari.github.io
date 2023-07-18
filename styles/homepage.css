@@ -171,7 +171,8 @@ nav ul li a:hover{
   font-weight: 10;
 }
 #pagend {
-  background-color: rgb(6, 29, 55);
+  /* background-color: rgb(6, 29, 55); */
+  background-color: rgb(1, 4, 36);
   font-size: 15px;
   text-align: center;
   text-align: right;
@@ -212,19 +213,30 @@ p {
   font-family: "Cinzel", serif;
 }
 .fa {
+  width: 20px;
+  height: 20px;
   padding: 10px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  margin: 5px 5px;
+  border-radius: 100%;
+  justify-content: center;
+  margin: 5px 5px;
+  text-decoration: none;
+  background-image: linear-gradient(35deg,rgb(247, 176, 187),rgb(114, 82, 241));
+  /* padding: 10px;
   font-size: 15px;
   width: 20px;
   height: 20px;
   color: black;
-  background-color: whitesmoke;
-  /* border: 1.5px solid white; */
-  text-align: center;
+  background-color: whitesmoke; */
+  /* text-align: center;
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 100%;
   justify-content: center;
-  box-shadow: 2px 2px 0px rgb(151, 140, 140);
+  box-shadow: 2px 2px 0px rgb(151, 140, 140); */
 }
 /* .fa fa-facebook :hover {
     box-shadow: 2px 2px 4px #3B5998 ;
@@ -239,9 +251,13 @@ p {
     color: #dd4b39; */
 
 .fa:hover {
-  color: rgb(0,242,255);
-  box-shadow: 2px 2px 1px rgb(0,242,255);
-}
+  /* color: rgb(0,242,255);
+  box-shadow: 2px 2px 1px rgb(0,242,255); */
+  transform: scale(1.1);
+  box-shadow: 2px 2px 1px rgb(141, 255, 255);
+
+} 
+
 
 .walltitle {
   text-align: center;
@@ -490,22 +506,21 @@ p {
   margin: 5% 5%;
   background-color: rgb(232, 232, 232);
   padding: 2%;
+  text-align: center;
   
 }
-.developer-container .developer-card {
+/* .developer-container .developer-card {
  
   width: 300px;
  
   margin-left: 2%;
   padding: 3%;
-  box-shadow: 0px 1px 2px 0px grey, 1px 1px 2px 0px grey;
-  list-style: none;
-}
-.developer-container .developer-card:hover{
-  box-shadow: 1px 2px 2px 0px grey, 1px 2px 3px 1px grey;
-}
+ 
+ 
+} */
 
-.developer-container .developer-card img{
+
+.developer-container  img{
   border-radius: 100%;
   margin: 5%;
   width: 90%;
@@ -513,27 +528,27 @@ p {
   
   
 }
-.developer-container .developer-card img:hover{
+.developer-container img:hover{
   transform: scale(1.2);
 
 }
 
-.developer-container .developer-card  p{
-  font-family: 'Playfair Display',serif;
+.developer-container  p{
+  font-family: "Cormorant SC",serif;
   font-size: 2rem;
 
 }
-.developer-container .developer-card h3{
-  font-family: "Raleway",serif;
+.developer-container  h3{
+  font-family: "Cormorant SC",serif;
   font-size: 3rem;
   color: #000;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 500;
   
 
 }
 .developer-container h2{
-  font-family: "Raleway",serif;
+  font-family:"Raleway",serif;
   font-size: 5rem;
   color: #000;
   text-align: center;
@@ -547,4 +562,8 @@ p {
   
   background-image: linear-gradient(35deg,rgb(186, 138, 245),rgb(245, 174, 185));
  
+}
+.developer-container ul{
+  display: inline-block;
+  list-style: none;
 }
