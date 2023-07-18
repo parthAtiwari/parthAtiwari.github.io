@@ -254,7 +254,8 @@ p {
   /* color: rgb(0,242,255);
   box-shadow: 2px 2px 1px rgb(0,242,255); */
   transform: scale(1.1);
-  box-shadow: 2px 2px 1px rgb(141, 255, 255);
+  opacity: 0.8;
+  /* box-shadow: 2px 2px 1px rgb(141, 255, 255); */
 
 } 
 
@@ -505,7 +506,7 @@ p {
   width: 90%;
   margin: 5% 5%;
   background-color: rgb(232, 232, 232);
-  padding: 2%;
+  padding: 0.1%;
   text-align: center;
   
 }
