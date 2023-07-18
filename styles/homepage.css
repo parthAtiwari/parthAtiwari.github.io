@@ -489,6 +489,7 @@ p {
   width: 90%;
   margin: 5% 5%;
   background-color: rgb(232, 232, 232);
+  padding: 2%;
   
 }
 .developer-container .developer-card {
@@ -506,8 +507,9 @@ p {
 
 .developer-container .developer-card img{
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  margin: 5%;
+  width: 90%;
+  height: 90%;
   
   
 }
@@ -537,4 +539,12 @@ p {
   text-align: center;
   font-weight: 600;
   animation: color-change 1s infinite;
+}
+.radial-bg{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  
+  background-image: linear-gradient(35deg,rgb(186, 138, 245),rgb(245, 174, 185));
+ 
 }
