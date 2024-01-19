@@ -760,5 +760,10 @@ p {
     }
 }
 
-
+.recents{
+  background-color: rgba(182, 182, 182, 0.94);
+  margin:  auto;
+  padding: 2%;
+  
+}
 
