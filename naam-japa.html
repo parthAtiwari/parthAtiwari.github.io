@@ -104,6 +104,22 @@
 
 
 <script>
+  const words = [
+    "राधा",
+    "कृष्ण",
+    "राधा",
+    "श्याम",
+    "राधा",
+    "मुरारी",
+    "राधा",
+    "गिरधारी",
+    "राधा",
+    "माधव",
+    "राधा",
+    "बाल गोपाल",
+    "राधा",
+    "वल्लभ"
+  ];
   // Click -> spawn bubble
   document.addEventListener('click', function (e) {
     // create
@@ -137,7 +153,13 @@
     inner.className = 'bubble-inner';
     // text element
     const txt = document.createElement('span');
-    txt.textContent = 'राधा';
+    txt.textContent = word;
+
+    // scale font based on word length
+    let baseFont = size / 2.4; 
+    if(word.length > 6) baseFont *= 0.75; 
+    if(word.length > 8) baseFont *= 0.65; 
+    txt.style.fontSize = baseFont + "px";
     inner.appendChild(txt);
     bubble.appendChild(inner);
 
