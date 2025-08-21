@@ -4,6 +4,158 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Naam Japa Counter • Radha–Krishna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:wght@700&display=swap" rel="stylesheet">
+  <!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:wght@700&display=swap" rel="stylesheet">
+<style>
+
+
+
+
+  /* Bubble (handles floating/position/size) */
+  .bubble{
+    position:absolute;
+    bottom:-140px;            /* start off-screen */
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), rgba(180,200,255,0.06) 65%);
+    box-shadow:
+      inset -4px -6px 12px rgba(0,0,0,0.22),
+      inset 3px 5px 10px rgba(255,255,255,0.14);
+    pointer-events:none;
+    transform-origin:center;
+    z-index:9999;
+    opacity:0;
+    /* CSS vars set from JS per-bubble */
+    width: var(--b-size,72px);
+    height: var(--b-size,72px);
+    animation: floatUp var(--b-duration,8s) linear forwards;
+    will-change: transform, opacity;
+  }
+
+  /* Inner element rotates independently */
+  .bubble-inner{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation: rotateBubble var(--b-rot,4s) ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Text inside bubble */
+  .bubble-inner span{
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight:700;
+    font-size: clamp(18px, 3.2vw, var(--text-max));
+    line-height:1;
+    background: linear-gradient(180deg, #fff9dc 0%, #ffe28a 35%, #f0c24d 58%, #b88917 82%, #fff6c4 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+    text-shadow:
+      0 1px 2px rgba(0,0,0,.22),
+      0 4px 10px rgba(255,208,96,.28);
+    pointer-events:none;
+    user-select:none;
+  }
+
+  /* Float up animation (translate only) */
+  @keyframes floatUp {
+    0%   { transform: translateY(0) scale(0.75); opacity:0; }
+    8%   { opacity:1; }
+    92%  { opacity:1; }
+    100% { transform: translateY(-120vh) scale(1.02); opacity:0; }
+  }
+
+  /* Gentle rotate + wobble (rotate only) */
+  @keyframes rotateBubble {
+    0%   { transform: rotate(0deg) scale(1); }
+    25%  { transform: rotate(6deg) scale(1.02); }
+    50%  { transform: rotate(0deg) scale(1); }
+    75%  { transform: rotate(-6deg) scale(0.98); }
+    100% { transform: rotate(0deg) scale(1); }
+  }
+
+  /* Optional: subtle drop shadow for whole scene (looks nicer on some monitors) */
+  .scene-shadow{
+    pointer-events:none;
+    position:fixed; inset:0;
+    box-shadow: inset 0 0 120px rgba(0,0,0,0.45);
+  }
+
+  /* Small accessibility hint (hidden visually but available to screen readers) */
+  .sr-only{
+    position:absolute !important;
+    height:1px; width:1px;
+    overflow:hidden; clip:rect(1px,1px,1px,1px);
+    white-space:nowrap; border:0; padding:0; margin:-1px;
+  }
+</style>
+
+
+
+<script>
+  // Click -> spawn bubble
+  document.addEventListener('click', function (e) {
+    // create
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+
+    // random size (48 - 84 px)
+    const size = Math.round(48 + Math.random() * 36);
+    bubble.style.setProperty('--b-size', size + 'px');
+
+    // random float duration (6s - 10s)
+    const duration = (6 + Math.random() * 4).toFixed(2);
+    bubble.style.setProperty('--b-duration', duration + 's');
+
+    // random rotation duration (3s - 5.5s)
+    const rot = (3 + Math.random() * 2.5).toFixed(2);
+    bubble.style.setProperty('--b-rot', rot + 's');
+
+    // position - center bubble on click
+    const left = e.clientX - size / 2;
+    // keep inside viewport horizontally
+    const clampedLeft = Math.max(6, Math.min(left, window.innerWidth - size - 6));
+    bubble.style.left = clampedLeft + 'px';
+
+    // optional small horizontal drift via CSS (random)
+    const drift = Math.round(-40 + Math.random() * 80); // -40..+40 px
+    bubble.style.transform = `translateX(${drift}px)`; // initial X drift; floatUp anim will add translateY
+
+    // inner rotating container
+    const inner = document.createElement('div');
+    inner.className = 'bubble-inner';
+    // text element
+    const txt = document.createElement('span');
+    txt.textContent = 'राधा';
+    inner.appendChild(txt);
+    bubble.appendChild(inner);
+
+    // append
+    document.body.appendChild(bubble);
+
+    // remove after animation finishes (duration + small buffer)
+    const removeAfter = Math.ceil((parseFloat(duration) + 0.6) * 1000);
+    setTimeout(() => {
+      bubble.remove();
+    }, removeAfter);
+  });
+
+  // Improve touch on mobile: prevent double-tap zoom (optional)
+  document.addEventListener('touchstart', function(){}, {passive:true});
+</script>
+
   <style>
     :root{
       --bg:#0f172a;         /* slate-900 */
@@ -93,6 +245,7 @@
         </div>
         <p class="tap-area">Tip: You can set your own Radha–Krishna photo using <b>Upload</b>. The image is saved on your device (no internet) and restored when you reopen.</p>
       </div>
+      <div class="scene-shadow" aria-hidden="true"></div>
 
       <!-- RIGHT: Counter -->
       <div class="card counter-card" id="counterCard" role="region" aria-label="Japa Counter">
