@@ -149,6 +149,7 @@
     bubble.style.transform = `translateX(${drift}px)`; // initial X drift; floatUp anim will add translateY
 
     // inner rotating container
+    const word = words[Math.floor(Math.random()*words.length)];
     const inner = document.createElement('div');
     inner.className = 'bubble-inner';
     // text element
