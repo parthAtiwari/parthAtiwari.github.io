@@ -161,7 +161,8 @@
     // optional small horizontal drift via CSS (random)
     const drift = Math.round(-40 + Math.random() * 80); // -40..+40 px
     bubble.style.transform = `translateX(${drift}px)`; // initial X drift; floatUp anim will add translateY
-
+    const bg = colors[Math.floor(Math.random()*colors.length)];
+    bubble.style.background = bg;
     // inner rotating container
     const word = words[Math.floor(Math.random()*words.length)];
     const inner = document.createElement('div');
