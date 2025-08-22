@@ -53,21 +53,50 @@
 
   /* Text inside bubble */
   .bubble-inner span, .mantra{
+    .bubble-inner span{
     font-family: "Tiro Devanagari Hindi", serif;
     font-weight:700;
-    font-size: clamp(18px, 3.2vw, var(--text-max));
-    line-height:1;
-    background: linear-gradient(180deg, #fff9dc 0%, #ffe28a 35%, #f0c24d 58%, #b88917 82%, #fff6c4 100%);
+    background: linear-gradient(180deg,#fff9dc 0%,#ffe28a 35%,#f0c24d 58%,#b88917 82%,#fff6c4 100%);
     -webkit-background-clip:text;
             background-clip:text;
     color:transparent;
-    text-shadow:
-      0 1px 2px rgba(0,0,0,.22),
-      0 4px 10px rgba(255,208,96,.28);
-    pointer-events:none;
+    text-shadow:0 1px 2px rgba(0,0,0,.35),0 4px 10px rgba(255,208,96,.4);
     user-select:none;
+    line-height:1.2;
+    white-space:nowrap;
+    word-break:keep-all;
+    display:block;
+  }
+  .star{
+    position:absolute;
+    background: radial-gradient(circle, #fffef6 0%, #ffeab6 40%, rgba(255,215,120,0.8) 70%, transparent 100%);
+    border-radius:50%;
+    pointer-events:none;
+    filter: drop-shadow(0 0 5px #fff6d5) drop-shadow(0 0 12px #ffd26a);
   }
 
+  /* SHOOTING STAR */
+  .shooting-star {
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,240,200,1) 0%, rgba(255,210,100,0.7) 50%, transparent 100%);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    animation: shooting 2s ease-out forwards;
+  }
+  @keyframes twinkle {
+    0%   { transform:scale(0.8); opacity:0.6; }
+    50%  { transform:scale(1.4); opacity:1; }
+    100% { transform:scale(0.8); opacity:0.6; }
+  }
+
+  @keyframes shooting {
+    0%   { transform: translateX(0) translateY(0) rotate(-45deg); opacity:1; }
+    100% { transform: translateX(300px) translateY(-300px) rotate(-45deg); opacity:0; }
+  }
   /* Float up animation (translate only) */
   @keyframes floatUp {
     0%   { transform: translateY(0) scale(0.75); opacity:0; }
@@ -118,7 +147,18 @@
     "राधा",
     "बाल गोपाल",
     "राधा",
-    "वल्लभ"
+    "वल्लभ",
+    "मोहन"
+  ];
+  const colors = [
+    "radial-gradient(circle at 30% 30%, rgba(30,50,160,0.85), rgba(10,20,60,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(90,30,130,0.85), rgba(40,10,70,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(20,110,60,0.85), rgba(10,40,25,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(150,30,60,0.85), rgba(70,10,30,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(30,90,100,0.85), rgba(10,40,50,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(180,120,30,0.9), rgba(100,60,10,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(15,45,95,0.9), rgba(5,20,50,0.95))",
+    "radial-gradient(circle at 30% 30%, rgba(90,20,60,0.9), rgba(40,10,30,0.95))"
   ];
   // Click -> spawn bubble
   document.addEventListener('click', function (e) {
@@ -156,16 +196,46 @@
     const txt = document.createElement('span');
     txt.textContent = word;
 
+    const bg = colors[Math.floor(Math.random()*colors.length)];
+    bubble.style.background = bg;
+
     // scale font based on word length
-    let baseFont = size / 2.4; 
-    if(word.length > 6) baseFont *= 0.75; 
-    if(word.length > 8) baseFont *= 0.65; 
-    txt.style.fontSize = baseFont + "px";
+     const parts = word.split(" ");
+    parts.forEach((part)=>{
+      const txt = document.createElement('span');
+      txt.style.fontSize = Math.min(size/3, 26) + "px";
+      txt.textContent = part;
+      inner.appendChild(txt);
+    });
+
+    // GOLDEN STARS inside bubble
+    const starCount = 3 + Math.floor(Math.random()*3);
+    for(let i=0;i<starCount;i++){
+      const star = document.createElement('div');
+      star.className = 'star';
+      const starSize = (Math.random()*3 + 3);
+      star.style.width = starSize + "px";
+      star.style.height = starSize + "px";
+      star.style.left = (Math.random()*size*0.7 - size*0.35 + size/2) + "px";
+      star.style.top  = (Math.random()*size*0.7 - size*0.35 + size/2) + "px";
+      const twinkleSpeed = (1 + Math.random()*1.5).toFixed(2);
+      star.style.animation = `twinkle ${twinkleSpeed}s ease-in-out infinite`;
+      inner.appendChild(star);
+    }
     inner.appendChild(txt);
     bubble.appendChild(inner);
 
     // append
     document.body.appendChild(bubble);
+      // Occasionally spawn shooting star 🌠
+    if(Math.random() < 0.3){
+      const shoot = document.createElement('div');
+      shoot.className = 'shooting-star';
+      shoot.style.left = Math.random() * window.innerWidth/2 + "px";
+      shoot.style.top  = Math.random() * window.innerHeight/2 + "px";
+      document.body.appendChild(shoot);
+      setTimeout(()=> shoot.remove(), 2000);
+    }
 
     // remove after animation finishes (duration + small buffer)
     const removeAfter = Math.ceil((parseFloat(duration) + 0.6) * 1000);
@@ -173,6 +243,7 @@
       bubble.remove();
     }, removeAfter);
   });
+  
 
   // Improve touch on mobile: prevent double-tap zoom (optional)
   document.addEventListener('touchstart', function(){}, {passive:true});
