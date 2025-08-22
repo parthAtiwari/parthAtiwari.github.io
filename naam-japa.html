@@ -200,8 +200,8 @@
     bubble.style.background = bg;
 
     // scale font based on word length
-     const parts = word.split(" ");
-    parts.forEach((part)=>{
+    const parts = word.split(" ");
+     parts.forEach((part)=>{
       const txt = document.createElement('span');
       txt.style.fontSize = Math.min(size/3, 26) + "px";
       txt.textContent = part;
