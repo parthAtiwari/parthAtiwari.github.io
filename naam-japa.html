@@ -13,7 +13,7 @@
   /* Bubble (handles floating/position/size) */
   .bubble{
     position:absolute;
-    bottom:0px;
+    bottom:-120px;
     border-radius:50%;
     display:flex;
     align-items:center;
@@ -135,7 +135,8 @@
     "radial-gradient(circle at 30% 30%, rgba(15,45,95,0.9), rgba(5,20,50,0.95))",
     "radial-gradient(circle at 30% 30%, rgba(90,20,60,0.9), rgba(40,10,30,0.95))"
   ];
-  function spawnBubble(){
+  // Click -> spawn bubble
+  document.addEventListener('click', function (e) {
     // create
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
@@ -206,7 +207,7 @@
       document.body.appendChild(shoot);
       setTimeout(()=> shoot.remove(), 2000);
     }
-  };
+  });
 
   // Improve touch on mobile: prevent double-tap zoom (optional)
   document.addEventListener('touchstart', function(){}, {passive:true});
@@ -491,7 +492,7 @@
     function add(n=1){
       count = Math.max(0, count + n);
       pushHistory(n>0?'+':'undo');
-      persist(); updateUI(); playClick(); vibrate(); spawnBubble();
+      persist(); updateUI(); playClick(); vibrate();
     }
 
     function undo(){ add(-1); }
